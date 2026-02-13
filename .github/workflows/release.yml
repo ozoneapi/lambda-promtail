@@ -44,6 +44,5 @@ jobs:
           docker buildx build --platform linux/amd64 \
             --provenance=false --progress=plain \
             -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG \
-            -t $ECR_REGISTRY/$ECR_REPOSITORY:latest \
             -f aws/Dockerfile \
             --push .
